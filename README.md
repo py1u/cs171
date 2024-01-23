@@ -1,2 +1,2 @@
-## cs171
-# Winter 2024
+# cs171
+## Winter 2024
