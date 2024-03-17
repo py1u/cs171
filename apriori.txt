@@ -1,0 +1,15 @@
+For Apriorigen, start with an empty set C for storing the candidates (just like the pseudocode). 
+Then iterate over all the item pairs from the set Li-1. Inside the nested loop, for each pair of item sets compute their union.
+ Then check the length of the union. If the condition is met, add the union to the candidate set.
+
+For the Apriori algorithm, follow the steps:
+- Calculate the minimum count required for an itemset to be considered frequent.
+- Create an initial set of frequent item sets containing single-itemsets with counts exceeding the minimum count.
+- Start iteration (Iteration will continue until no new frequent itemsets can be generated).
+Generate candidate itemsets by combining the previous iteration's frequent itemsets.
+Filter candidate itemsets to retain only those with counts exceeding the minimum count.
+Update the set of frequent itemsets with the filtered candidate itemsets.
+Union the current frequent itemsets with the set of all frequent itemsets.
+- Finally, return the set of all frequent itemsets.
+
+Hope this helps. You can actually implement this algorithm by following just the pseudocodes.
